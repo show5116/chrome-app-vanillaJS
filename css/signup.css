@@ -1,0 +1,98 @@
+@import url(/css/reset.css);
+@import url(/css/common.css);
+h1{
+    font-size: 2rem;
+}
+.body__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0 auto;
+    min-width: 750px;
+    font-size: 1.6rem;
+    background-image: url(/img/1.jpg);
+}
+.signup-form{
+    border: 1px solid #dadce0;
+    background-color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 3%;
+    display: flex;
+    justify-content: space-between;
+    transition: all .3s ease-in;
+}
+.signup-form-input{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 500px;
+}
+.signup-form-input .form-text{
+    outline: none;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid #dadce0;
+    position: absolute;
+    transition: border-bottom .3s ease-in;
+}
+.signup-form-input .form-text:focus{
+    border-bottom: 1px solid blue; 
+}
+.signup-form-input .text-label{
+    position: absolute;
+    margin-top: .1em;
+    margin-left: .5em;
+    font-size: .7rem;
+    cursor: text;
+    color: #808080;
+    transition: all .2s ease-in;
+}
+.signup-form-input .labelmove{
+    transform: translate(0,-5em);
+    font-size : .1rem;
+}
+.name{
+    display: flex;
+}
+.name input{
+    box-flex: 1;
+    flex-grow: 1;
+    margin-right: 8px;
+    width : 90%;
+}
+.firstname{
+    width : 52%;
+}
+.lastname{
+    width : 52%;
+}
+.pass{
+    width : 100%;
+}
+.pass input{
+    margin-right: 8px;
+    width : 95%;    
+}
+.password-see{
+    float: right;
+    position: absolute;
+    margin-top: 1px;
+    cursor: pointer;
+    opacity: .6;
+}
+.password-see:hover{
+    opacity: 1;
+}
+.pass-check ul{
+    font-size: 1.0rem;
+}
+.mail{
+    width : 100%;   
+}
+.mail input{
+    margin-right: 8px;
+    width : 95%;    
+}
